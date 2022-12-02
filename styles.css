@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+header {
+    margin: 25px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text {
+    margin-top: 40px;
+}
+
+.hero-text p {
+    line-height: 1.9;
+    margin-top: 30px;
+    opacity: .6;
+}
+
+.hero-text h1 {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.hero-text a {
+    padding: .5rem 2rem;
+    background-color: black;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: flex;
+    width: fit-content;
+    color: white;
+    border-radius: 8px;
+}
+
+.surv .off {
+    text-align: center;
+    opacity: .6;
+    line-height: 1.8;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.surv .here {
+    text-align: center;
+    font-weight: 500;
+}
+
+.surv a {
+    padding: .5rem 2rem;
+    background-color: black;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+nav p {
+    font-weight: 560;
+}
+
+
+@media(max-width:500px){
+
+    .hero {
+        display: grid;
+    }
+
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .hero-text p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .hero-text a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding: .6rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .surv .off {
+        text-align: center;
+        opacity: .6;
+        margin-top: 20px;
+        line-height: 1.8;
+        width: 90%;
+    }
+
+    .surv .here {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .surv a {
+        padding: .5rem 2rem;
+        background-color: black;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        color: white;
+        border-radius: 8px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 50px;
+    }
+}
