@@ -127,9 +127,114 @@ nav .logo {
     margin-bottom: 50px;
 }
 
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 500px;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #fff;
+}
+
 .city {
     display: flex;
-    background: rgb(88, 88, 177);
+    background: rgb(78, 122, 241);
     color: white;
     margin-top: 3rem;
 }
@@ -201,7 +306,7 @@ nav .logo {
 }
 
 .create {
-    background-color: rgb(78, 122, 241);
+    background-color: rgb(88, 88, 177);
     color: white;
     padding: 1rem;
     font-weight: 550;
@@ -214,11 +319,11 @@ nav p {
 
 @media(max-width:500px){
     nav .mainMenu {
-        height: 43vh;
+        height: 47vh;
         position: fixed;
         top: 0;
         right: 0;
-        left: 100;
+        left: 60%;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
@@ -262,13 +367,13 @@ nav p {
 
     .hero-text h1 {
         text-align: start;
-        font-size: 23px;
+        font-size: 20px;
         margin-left: 1rem;
     }
 
     .hero-text p {
         text-align: start;
-        font-size: 18px;
+        font-size: 15px;
         margin-left: 1rem;
     }
 
@@ -287,11 +392,13 @@ nav p {
         line-height: 1.8;
         width: 95%;
         margin-left: 1rem;
+        font-size: 15px;
     }
 
     .surv h2 {
         text-align: start;
         margin-left: 1rem;
+        font-size: 20px;
     }
 
 
@@ -308,6 +415,67 @@ nav p {
         margin-top: 2rem;
         margin-bottom: 50px;
     }
+
+    .slider {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .slides {
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slides input {
+        display: none;
+    }
+    
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .slide img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .navigation-manual {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 400px;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin-top: 360px;
+}
+
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
 
     .city {
         display: grid;
