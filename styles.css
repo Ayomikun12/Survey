@@ -248,7 +248,7 @@ nav p {
 
     nav .logo {
         font-size: 15px;
-        margin-top: .7rem;
+        margin-top: 1rem;
     }
 
     .hero {
@@ -261,13 +261,15 @@ nav p {
     }
 
     .hero-text h1 {
-        text-align: center;
+        text-align: start;
         font-size: 23px;
+        margin-left: 1rem;
     }
 
     .hero-text p {
-        text-align: center;
+        text-align: start;
         font-size: 18px;
+        margin-left: 1rem;
     }
 
     .hero-text a {
@@ -279,17 +281,20 @@ nav p {
     }
 
     .surv .off {
-        text-align: center;
+        text-align: start;
         opacity: .6;
         margin-top: 20px;
         line-height: 1.8;
-        width: 90%;
+        width: 95%;
+        margin-left: 1rem;
     }
 
-    .surv .here {
-        text-align: center;
-        font-weight: 500;
+    .surv h2 {
+        text-align: start;
+        margin-left: 1rem;
     }
+
+
 
     .surv a {
         padding: .5rem 2rem;
